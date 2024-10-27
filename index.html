@@ -1,1212 +1,715 @@
 <!DOCTYPE html>
-
-
-<html lang="zh-CN">
-
-
+<html>
 <head>
-  <meta charset="utf-8" />
     
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>
-     Ursa&#39;s blog
-  </title>
-  <meta name="generator" content="hexo-theme-ayer">
-  
-  <link rel="shortcut icon" href="/favicon.ico" />
-  
-  
-<link rel="stylesheet" href="/dist/main.css">
 
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+    
 
-  
-<link rel="stylesheet" href="/css/custom.css">
+    
 
-  
-  
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
-  
-  
 
-  
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Ursa&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Ursa&#39;s blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Ursa&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Ursa_Polaris">
+<meta name="twitter:card" content="summary">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
 
 </head>
 
-</html>
-
 <body>
-  <div id="app">
-    <main class="content on">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover1.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Ursa&#39;s blog</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/stingray-4392776_1920.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Ursa_Polaris</h5>
+          <a href="mailto:1594552922@qq.com" title="1594552922@qq.com" class="mail">1594552922@qq.com</a>
+        </hgroup>
       </div>
     </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/iursa" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
   </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Ursa&#39;s blog</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header index-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Ursa&#39;s blog</h1>
+        <h5 class="subtitle">
+            
+                
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-2024"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2024-06-12 10:21:28" datetime="2024-06-12T02:21:28.000Z"  itemprop="datePublished">2024-06-12</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2024/06/12/2024/">2024</a>
+    </h3>
+  
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
-<div id="main">
-  <section class="outer">
-  <article class="articles">
-    
-    
-    
-    
-    <article id="post-2024" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2024/06/12/2024/"
-    >2024</a> 
-</h2>
- 
-
-    </header>
-    
+    <div class="post-content" id="post-content" itemprop="postContent">
 
     
-    <div class="article-meta">
-      <a href="/2024/06/12/2024/" class="article-date">
-  <time datetime="2024-06-12T02:21:28.000Z" itemprop="datePublished">2024-06-12</time>
-</a>
-      
-      
-      
-      
+        
+    
+
+        <a href="/2024/06/12/2024/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-搭建了自己的博客之后想解析到自己的域名之如何解析" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%90%8E%E6%83%B3%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E4%B9%8B%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90/"
-    >搭建了自己的博客之后想解析到自己的域名之如何解析</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-搭建了自己的博客之后想解析到自己的域名之如何解析"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2022-07-05 00:34:50" datetime="2022-07-04T16:34:50.000Z"  itemprop="datePublished">2022-07-05</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%90%8E%E6%83%B3%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E4%B9%8B%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90/" class="article-date">
-  <time datetime="2022-07-04T16:34:50.000Z" itemprop="datePublished">2022-07-05</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%90%8E%E6%83%B3%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E4%B9%8B%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90/">搭建了自己的博客之后想解析到自己的域名之如何解析</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        使用Github+Hexo搭建了自己的博客之后。一直有个砍，卡在如何使用自己的域名访问博客搭建自己博客。白嫖Github作为服务器，使用Hexo搭建自己的服务器。
+让博客和域名之间对话。搭建好自己的博客。（先决条件）参照帖子。在Github自己的博客仓库里新建一个CNAME文件
+                
+                    
+                   ...
+    
+
+        <a href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%90%8E%E6%83%B3%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E4%B9%8B%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <h1 id="使用Github-Hexo搭建了自己的博客之后。一直有个砍，卡在如何使用自己的域名访问博客"><a href="#使用Github-Hexo搭建了自己的博客之后。一直有个砍，卡在如何使用自己的域名访问博客" class="headerlink" title="使用Github+Hexo搭建了自己的博客之后。一直有个砍，卡在如何使用自己的域名访问博客"></a>使用Github+Hexo搭建了自己的博客之后。一直有个砍，卡在如何使用自己的域名访问博客</h1><h2 id="搭建自己博客。"><a href="#搭建自己博客。" class="headerlink" title="搭建自己博客。"></a>搭建自己博客。</h2><p>白嫖Github作为服务器，使用Hexo搭建自己的服务器。</p>
-<h2 id="让博客和域名之间对话。"><a href="#让博客和域名之间对话。" class="headerlink" title="让博客和域名之间对话。"></a>让博客和域名之间对话。</h2><h3 id="搭建好自己的博客。（先决条件）参照帖子。"><a href="#搭建好自己的博客。（先决条件）参照帖子。" class="headerlink" title="搭建好自己的博客。（先决条件）参照帖子。"></a>搭建好自己的博客。（先决条件）参照<strong><em><a href="http://16474124.xyz/2020/05/13/GitHub-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">帖子</a></em></strong>。</h3><h3 id="在Github自己的博客仓库里新建一个CNAME文件"><a href="#在Github自己的博客仓库里新建一个CNAME文件" class="headerlink" title="在Github自己的博客仓库里新建一个CNAME文件"></a>在Github自己的博客仓库里新建一个CNAME文件</h3><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/1.PNG" alt="1" title="">
-                </div>
-                <div class="image-caption">1</div>
-            </figure>
-
-<h3 id="编辑CNAME文件"><a href="#编辑CNAME文件" class="headerlink" title="编辑CNAME文件"></a>编辑CNAME文件</h3><p>文件内写入要绑定的域名，不能含有http://和www</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/2.PNG" alt="2" title="">
-                </div>
-                <div class="image-caption">2</div>
-            </figure>
-
-<h3 id="进入博客所在仓库设置页面，点击Page，如图"><a href="#进入博客所在仓库设置页面，点击Page，如图" class="headerlink" title="进入博客所在仓库设置页面，点击Page，如图"></a>进入博客所在仓库设置页面，点击<strong><em>Page</em></strong>，如图</h3><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/3.PNG" alt="3" title="">
-                </div>
-                <div class="image-caption">3</div>
-            </figure>
-<p>说明此“服务器”已经关联到你的域名了。</p>
-<h2 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h2><h3 id="ping出你的github-io服务器的IP，如图"><a href="#ping出你的github-io服务器的IP，如图" class="headerlink" title="ping出你的github.io服务器的IP，如图"></a>ping出你的github.io服务器的IP，如图</h3><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/4.PNG" alt="4" title="">
-                </div>
-                <div class="image-caption">4</div>
-            </figure>
-<p>记住马赛克马住的IP。</p>
-<h3 id="修改域名解析记录"><a href="#修改域名解析记录" class="headerlink" title="修改域名解析记录"></a>修改域名解析记录</h3><p>添加两个A记录，主机记录分别为www和@，如图</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/5.PNG" alt="5" title="">
-                </div>
-                <div class="image-caption">5</div>
-            </figure>
-<p>记录值为马住的IP。</p>
-<h2 id="等待解析成功"><a href="#等待解析成功" class="headerlink" title="等待解析成功"></a>等待解析成功</h2><p>如图</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/20220705/6.PNG" alt="6" title="">
-                </div>
-                <div class="image-caption">6</div>
-            </figure>
-
-<h2 id="Sleeppppp-睡醒之后再更如何完美解决每次推送之后Hexo-g-d-无法解析问题。"><a href="#Sleeppppp-睡醒之后再更如何完美解决每次推送之后Hexo-g-d-无法解析问题。" class="headerlink" title="Sleeppppp, 睡醒之后再更如何完美解决每次推送之后Hexo g -d 无法解析问题。"></a>Sleeppppp, 睡醒之后再更如何完美解决每次推送之后Hexo g -d 无法解析问题。</h2>
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-今天开始学习VBA" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/02/27/%E4%BB%8A%E5%A4%A9%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0VBA/"
-    >今天开始学习VBA</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-今天开始学习VBA"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2022-02-27 23:31:59" datetime="2022-02-27T15:31:59.000Z"  itemprop="datePublished">2022-02-27</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2022/02/27/%E4%BB%8A%E5%A4%A9%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0VBA/" class="article-date">
-  <time datetime="2022-02-27T15:31:59.000Z" itemprop="datePublished">2022-02-27</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2022/02/27/%E4%BB%8A%E5%A4%A9%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0VBA/">今天开始学习VBA</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        2022学点东西，就从VBA开始吧！
+
+    
+
+        <a href="/2022/02/27/%E4%BB%8A%E5%A4%A9%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0VBA/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>2022学点东西，就从VBA开始吧！</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-Notes-of-training-Python" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/07/18/Notes-of-training-Python/"
-    >Notes of training Python</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-Notes-of-training-Python"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2021-07-18 21:34:35" datetime="2021-07-18T13:34:35.000Z"  itemprop="datePublished">2021-07-18</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2021/07/18/Notes-of-training-Python/" class="article-date">
-  <time datetime="2021-07-18T13:34:35.000Z" itemprop="datePublished">2021-07-18</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2021/07/18/Notes-of-training-Python/">Notes of training Python</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        今天浏览Python教程，文中指出：在交互模式下，上次输出的表达式会赋值给变量”_”。例子：
+1234567891011&gt;&gt;&gt;apple = 2.0&gt;&gt;&gt;price = 4.5&gt;&gt;&gt;money = apple * price9.0&gt;&gt;&gt;price + _  	# 验证文章中的说法13.5&gt;&gt;&gt;len(s...
+    
+
+        <a href="/2021/07/18/Notes-of-training-Python/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>今天浏览<a href="https://docs.python.org/zh-cn/3.9/tutorial/introduction.html#using-python-as-a-calculator" target="_blank" rel="noopener">Python教程</a>，文中指出：<br>在交互模式下，上次输出的表达式会赋值给变量”_”。例子：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;apple = <span class="number">2.0</span></span><br><span class="line">&gt;&gt;&gt;price = <span class="number">4.5</span></span><br><span class="line">&gt;&gt;&gt;money = apple * price</span><br><span class="line"><span class="number">9.0</span></span><br><span class="line">&gt;&gt;&gt;price + _  	<span class="comment"># 验证文章中的说法</span></span><br><span class="line"><span class="number">13.5</span></span><br><span class="line">&gt;&gt;&gt;len(str(_))	<span class="comment"># 再次验证</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">文章中说的没错哦！验证结束~</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
-<p>这篇文章给我介绍了这样好用的“即刻”变量之后又说“<strong><em>最好把该变量当作只读类型。不要为它显式赋值，否则会创建一个同名独立局部变量，该变量会用它的魔法行为屏蔽内置变量。</em></strong>”目前不是很懂他说的什么意思，字面理解可能是不要轻易使用这个即刻变量。</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-“2020-你在哪呢”" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/02/21/%E2%80%9C2020-%E4%BD%A0%E5%9C%A8%E5%93%AA%E5%91%A2%E2%80%9D/"
-    >“2020,你在哪呢”</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-“2020-你在哪呢”"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2021-02-21 01:56:08" datetime="2021-02-20T17:56:08.000Z"  itemprop="datePublished">2021-02-21</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2021/02/21/%E2%80%9C2020-%E4%BD%A0%E5%9C%A8%E5%93%AA%E5%91%A2%E2%80%9D/" class="article-date">
-  <time datetime="2021-02-20T17:56:08.000Z" itemprop="datePublished">2021-02-21</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2021/02/21/%E2%80%9C2020-%E4%BD%A0%E5%9C%A8%E5%93%AA%E5%91%A2%E2%80%9D/">“2020,你在哪呢”</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        2020年最主要的事就是我毕业了，我从学校里走出来了。今天是2021年2月21日晚。元旦左右老同学黄问我有什么新年计划或者任何年度总结没有，我什么都没有。2020好像没留下什么。其实想写点东西给2020，不知道从哪儿提起。明天（今天）计划陪同事去看电影，现在还没有睡意，干脆把2020总结写一下吧：那就从这支烟说起吧。
+2020元旦&amp;考研如图是我和舍友在CCZU-6#-113阳台上点起...
+    
+
+        <a href="/2021/02/21/%E2%80%9C2020-%E4%BD%A0%E5%9C%A8%E5%93%AA%E5%91%A2%E2%80%9D/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>2020年最主要的事就是我毕业了，我从学校里走出来了。<br>今天是2021年2月21日晚。<br>元旦左右老同学黄问我有什么新年计划或者任何年度总结没有，我什么都没有。2020好像没留下什么。<br>其实想写点东西给2020，不知道从哪儿提起。<br>明天（今天）计划陪同事去看电影，现在还没有睡意，干脆把2020总结写一下吧：<br>那就从这支烟说起吧。</p>
-<h2 id="2020元旦-amp-考研"><a href="#2020元旦-amp-考研" class="headerlink" title="2020元旦&amp;考研"></a>2020元旦&amp;考研</h2><p>如图是我和舍友在CCZU-6#-113阳台上点起了2020的第一支烟。<br>经历了2019年的考研，当时觉得凉凉，索性浪了起来，这几日在追剧《庆余年》<br>备考期间，找老师陶聊了聊，分析了当下的情况。老师总是劝我不要冒险，但是年轻人的冲劲老人家拦不住。<br>我也在努力的学，早出晚归，各兄弟也都互相打气。数学（一）真是一个大头，当我信心满满的计划着学习内容，可是实际的学习效率总是跟不上，以至于我在数学上很被动，心想再多给我一个月时间。我在大红书上记录着学习日期，翻书过半记下了9月26日的时间戳……<br>从九月半开始研究815专业课的内容，刚开始学习DS，花了一个月刷了多半课本，留下了后面的算法一章，遂开始钻进了打黑书（学长说有一半的分在打黑书），距离考试还有一个月我才翻开了OS的课本，感觉相对简单，但是也看了一知半解。</p>
-<h2 id="回家与新冠疫情"><a href="#回家与新冠疫情" class="headerlink" title="回家与新冠疫情"></a>回家与新冠疫情</h2><p>回家途中去了趟安徽阜阳（皖K）我姐家中，到了家里小侄女睡得正酣。待了两台就回老家了。<br>列车入豫，目遇亮白。这是雪的世界。<br>在家过了春节，疫情蔓延开来有点严重，我们2020届毕业生延迟毕业，取消毕业晚会，该有的欢聚全都取消了。<br>这是平淡的2020，在这场疫情之下过了春节，上了网课，参加了云招聘……<br>在家待到了4月中旬，家里的梨花和杏花落了，我收到了返校的通知。</p>
-<h2 id="返校、毕业"><a href="#返校、毕业" class="headerlink" title="返校、毕业"></a>返校、毕业</h2><p>返校4月22日，隔离14天开始做毕业实验。这14天估计是最无聊的两周：打游戏到凌晨，起床12点去食堂拎个盒饭回宿舍，解决了午餐继续王者峡谷/刺激战场，手机发烫到下午6点，又有一群觅食的好哥们穿着拖鞋去了食堂，带了盒饭顺带到美佳乐拿一瓶绿色的芬达……<br>6月底做完毕设实验答辩结束，意味着我们毕业了，7月5号</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-明天我要回家" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/02/09/%E6%98%8E%E5%A4%A9%E6%88%91%E8%A6%81%E5%9B%9E%E5%AE%B6/"
-    >明天我要回家</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-明天我要回家"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2021-02-09 01:16:54" datetime="2021-02-08T17:16:54.000Z"  itemprop="datePublished">2021-02-09</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2021/02/09/%E6%98%8E%E5%A4%A9%E6%88%91%E8%A6%81%E5%9B%9E%E5%AE%B6/" class="article-date">
-  <time datetime="2021-02-08T17:16:54.000Z" itemprop="datePublished">2021-02-09</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2021/02/09/%E6%98%8E%E5%A4%A9%E6%88%91%E8%A6%81%E5%9B%9E%E5%AE%B6/">明天我要回家</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        兜兜转转我还是回家了前些天晚上和大佬聊天，我说我要回家了，他问我是改变主意了。我说，回家的念想从未改变。
+上周我给家里人说不回家，在连云港过春节，随后我爸就给我筹备着寄些家里的年货来，我要求必须少不了王尹乡上的马山商铺的点心，我也如愿收到了qiao huo（炒菜的佐料），随快递到徐圩新区的还有一箱苹果。
+我吃的点心被同事说是老婆饼，可能是叫法不同吧，点心我陪我爷爷吃到长大，最好是五仁馅的。可...
+    
+
+        <a href="/2021/02/09/%E6%98%8E%E5%A4%A9%E6%88%91%E8%A6%81%E5%9B%9E%E5%AE%B6/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <h1 id="兜兜转转我还是回家了"><a href="#兜兜转转我还是回家了" class="headerlink" title="兜兜转转我还是回家了"></a>兜兜转转我还是回家了</h1><p>前些天晚上和大佬聊天，我说我要回家了，他问我是改变主意了。<br>我说，回家的念想从未改变。</p>
-<p>上周我给家里人说不回家，在连云港过春节，随后我爸就给我筹备着寄些家里的年货来，我要求必须少不了王尹乡上的马山商铺的点心，我也如愿收到了qiao huo（炒菜的佐料），随快递到徐圩新区的还有一箱苹果。</p>
-<p>我吃的点心被同事说是老婆饼，可能是叫法不同吧，点心我陪我爷爷吃到长大，最好是五仁馅的。<br>可是我爸寄给我的是各种糖果馅儿的，不大喜欢吃，搁在桌子上放了好一会了。</p>
-<p>也是前天晚上买了回家的车票，我不知道当我爷爷知道这个消息时会是哪种心情。</p>
-<p>今天时腊月二十八，时常这个时间在家里被家人催着赶新年的春联，今年以为回不了家就在苍梧山下写下了丑牛春联，顺风到家了。</p>
-<p>当即想到又要预订回连云港的车票，回家就几天，自己也知足了。</p>
-<p>各位，家里见。</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-赶工作总结-深夜打油诗" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/01/06/%E8%B5%B6%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93-%E6%B7%B1%E5%A4%9C%E6%89%93%E6%B2%B9%E8%AF%97/"
-    >赶工作总结-深夜打油诗</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-赶工作总结-深夜打油诗"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2021-01-06 02:30:23" datetime="2021-01-05T18:30:23.000Z"  itemprop="datePublished">2021-01-06</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2021/01/06/%E8%B5%B6%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93-%E6%B7%B1%E5%A4%9C%E6%89%93%E6%B2%B9%E8%AF%97/" class="article-date">
-  <time datetime="2021-01-05T18:30:23.000Z" itemprop="datePublished">2021-01-06</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2021/01/06/%E8%B5%B6%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93-%E6%B7%B1%E5%A4%9C%E6%89%93%E6%B2%B9%E8%AF%97/">赶工作总结-深夜打油诗</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        月结帖
+    乔某 字能拖 号能拖巨人
+
+
+自我来方洋，已过六月半，月月补总结，结报不及时。
+此时又深夜，满月共品茗，轩外涡轮声，欲融二九雪，
+暗中偷思去，夜半真有力。何殊拖少年，磨磨东既白。
+
+2021.1.4 00:35 作
+    
+
+        <a href="/2021/01/06/%E8%B5%B6%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93-%E6%B7%B1%E5%A4%9C%E6%89%93%E6%B2%B9%E8%AF%97/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <h1 id="月结帖"><a href="#月结帖" class="headerlink" title="月结帖"></a><center>月结帖</center></h1><font face="黑体" size=2 color = pink>
-    <center>乔某 字能拖 号能拖巨人</center>
-</font>
-
-<center>自我来方洋，已过六月半，月月补总结，结报不及时。</center>
-<center>此时又深夜，满月共品茗，轩外涡轮声，欲融二九雪，</center>
-<center>暗中偷思去，夜半真有力。何殊拖少年，磨磨东既白。</center>
-
-<p align="right">2021.1.4 00:35 作</p>
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-我在忙" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/12/30/%E6%88%91%E5%9C%A8%E5%BF%99/"
-    >我在忙</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-我在忙"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2020-12-30 00:08:59" datetime="2020-12-29T16:08:59.000Z"  itemprop="datePublished">2020-12-30</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2020/12/30/%E6%88%91%E5%9C%A8%E5%BF%99/" class="article-date">
-  <time datetime="2020-12-29T16:08:59.000Z" itemprop="datePublished">2020-12-30</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/12/30/%E6%88%91%E5%9C%A8%E5%BF%99/">我在忙</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        我最近在忙下班回到宿舍躺了一会，零点起来开始工作。我在忙。计划着明天做完库存盘点工作，心理焦急。我在忙。想着早点睡吧，今天港城落下第一场雪。我在忙。
+
+                
+                    
+                    
+                
+                Report
+            
+
+        ...
+    
+
+        <a href="/2020/12/30/%E6%88%91%E5%9C%A8%E5%BF%99/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <h2 id="我最近在忙"><a href="#我最近在忙" class="headerlink" title="我最近在忙"></a>我最近在忙</h2><p>下班回到宿舍躺了一会，零点起来开始工作。我在忙。<br>计划着明天做完库存盘点工作，心理焦急。我在忙。<br>想着早点睡吧，今天港城落下第一场雪。我在忙。</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/Screenshot_2020-12-29-09-05-58-355_com.miui.weather2.jpg" alt="Report" title="">
-                </div>
-                <div class="image-caption">Report</div>
-            </figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/IMG_20201229_173346.jpg" alt="Snow" title="">
-                </div>
-                <div class="image-caption">Snow</div>
-            </figure>
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-2020" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/12/13/2020/"
-    >2020</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-2020"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2020-12-13 23:46:39" datetime="2020-12-13T15:46:39.000Z"  itemprop="datePublished">2020-12-13</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2020/12/13/2020/" class="article-date">
-  <time datetime="2020-12-13T15:46:39.000Z" itemprop="datePublished">2020-12-13</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/12/13/2020/">2020</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        今天是2020年12月13日，我希望2020早点结束。
+
+    
+
+        <a href="/2020/12/13/2020/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>今天是2020年12月13日，我希望2020早点结束。</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-    <article id="post-拍摄影集" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
 
-  <div class="article-inner">
+        </li>
     
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/08/16/%E6%8B%8D%E6%91%84%E5%BD%B1%E9%9B%86/"
-    >拍摄影集</a> 
-</h2>
- 
+        <li class="post-list-item fade">
+            <article id="post-拍摄影集"
+  class="article-card article-type-post" itemprop="blogPost">
 
-    </header>
-    
+    <div class="post-meta">
+        <time class="post-time" title="2020-08-16 14:15:09" datetime="2020-08-16T06:15:09.000Z"  itemprop="datePublished">2020-08-16</time>
+
+        
+
+
+    </div>
 
     
-    <div class="article-meta">
-      <a href="/2020/08/16/%E6%8B%8D%E6%91%84%E5%BD%B1%E9%9B%86/" class="article-date">
-  <time datetime="2020-08-16T06:15:09.000Z" itemprop="datePublished">2020-08-16</time>
-</a>
-      
-      
-      
-      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/08/16/%E6%8B%8D%E6%91%84%E5%BD%B1%E9%9B%86/">拍摄影集</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+                
+                    
+                    
+                
+                Polaris
+            
+
+                
+                    
+                    
+                
+      ...
+    
+
+        <a href="/2020/08/16/%E6%8B%8D%E6%91%84%E5%BD%B1%E9%9B%86/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
     </div>
     
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="https://imgtu.com/i/cyJ4Ln" alt="Polaris" title="">
-                </div>
-                <div class="image-caption">Polaris</div>
-            </figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="https://hbimg.huabanimg.com/072b7b4047fc3f2b32d76e2c1e69c0327fb21ed6368582-Ml05g9_fw658/format/webp" alt="Polaris" title="">
-                </div>
-                <div class="image-caption">Polaris</div>
-            </figure>
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-  </article>
-  
 
-  
-  <nav class="page-nav">
+        </li>
     
+    </ul>
+
+    
+<nav id="page-nav">
+    <div class="inner">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-  
-</section>
+    </div>
+</nav>
+
+
 </div>
 
-      <footer class="footer">
-  <div class="outer">
-    <ul>
-      <li>
-        Copyrights &copy;
-        2015-2024
-        <i class="ri-heart-fill heart_icon"></i> Ursa_Polaris
-      </li>
-    </ul>
-    <ul>
-      <li>
+        <footer class="footer">
+    <div class="top">
         
-        
-        
-        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
-        <span class="division">|</span>
-        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
-        
-      </li>
-    </ul>
-    <ul>
-      <li>
-        
-        
-        <span>
-  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
-  <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
-</span>
-        
-      </li>
-    </ul>
-    <ul>
-      
-    </ul>
-    <ul>
-      <li>
-        <!-- cnzz统计 -->
-        
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
-        
-      </li>
-    </ul>
-  </div>
+
+        <p>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Ursa_Polaris &copy; 2020 - 2024</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
 </footer>
-      <div class="float_btns">
-        <div class="totop" id="totop">
-  <i class="ri-arrow-up-line"></i>
-</div>
 
-<div class="todark" id="todark">
-  <i class="ri-moon-line"></i>
-</div>
-
-      </div>
     </main>
-    <aside class="sidebar on">
-      <button class="navbar-toggle"></button>
-<nav class="navbar">
-  
-  <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="Ursa&#39;s blog"></a>
-  </div>
-  
-  <ul class="nav nav-main">
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/">主页</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/archives">归档</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/categories">分类</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
-    </li>
-    
-  </ul>
-</nav>
-<nav class="navbar navbar-bottom">
-  <ul class="nav">
-    <li class="nav-item">
-      
-      <a class="nav-item-link nav-item-search"  title="搜索">
-        <i class="ri-search-line"></i>
-      </a>
-      
-      
-      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
-      
-    </li>
-  </ul>
-</nav>
-<div class="search-form-wrap">
-  <div class="local-search local-search-plugin">
-  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
-  <div id="local-search-result" class="local-search-result"></div>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/&title=Ursa's blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/&title=Ursa's blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Ursa's blog&url=http://yoursite.com/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/" alt="微信分享二维码">
 </div>
-</div>
-    </aside>
-    <script>
-      if (window.matchMedia("(max-width: 768px)").matches) {
-        document.querySelector('.content').classList.remove('on');
-        document.querySelector('.sidebar').classList.remove('on');
-      }
-    </script>
-    <div id="mask"></div>
-
-<!-- #reward -->
-<div id="reward">
-  <span class="close"><i class="ri-close-line"></i></span>
-  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
-  <div class="reward-box">
-    
-    <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
-      <span class="reward-type">支付宝</span>
-    </div>
-    
-    
-    <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
-      <span class="reward-type">微信</span>
-    </div>
-    
-  </div>
-</div>
-    
-<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-<script src="/js/lazyload.min.js"></script>
 
-<!-- Subtitle -->
 
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-  try {
-    var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-      startDelay: 0,
-      typeSpeed: 200,
-      loop: true,
-      backSpeed: 100,
-      showCursor: true
-    });
-  } catch (err) {
-    console.log(err)
-  }
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
 </script>
 
-<!-- Tocbot -->
+<script src="/js/main.min.js?v=1.7.2"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
 
-<script src="/dist/main.js"></script>
-
-<!-- ImageViewer -->
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
 </div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
 
 <script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
-
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
-    }
-    viewer_init()
-</script>
-
-<!-- MathJax -->
-
-<!-- Katex -->
-
-<!-- busuanzi  -->
-
-
-<script src="/js/busuanzi-2.3.pure.min.js"></script>
-
-
-<!-- ClickLove -->
-
-<!-- CodeCopy -->
-
-
-<link rel="stylesheet" href="/css/clipboard.css">
-
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script>
-  function wait(callback, seconds) {
-    var timelag = null;
-    timelag = window.setTimeout(callback, seconds);
-  }
-  !function (e, t, a) {
-    var initCopyCode = function(){
-      var copyHtml = '';
-      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
-      copyHtml += '</button>';
-      $(".highlight .code pre").before(copyHtml);
-      $(".article pre code").before(copyHtml);
-      var clipboard = new ClipboardJS('.btn-copy', {
-        target: function(trigger) {
-          return trigger.nextElementSibling;
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
         }
-      });
-      clipboard.on('success', function(e) {
-        let $btn = $(e.trigger);
-        $btn.addClass('copied');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-checkbox-circle-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPIED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-checkbox-circle-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-      clipboard.on('error', function(e) {
-        e.clearSelection();
-        let $btn = $(e.trigger);
-        $btn.addClass('copy-failed');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-time-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPY FAILED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-time-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-    }
-    initCopyCode();
-  }(window, document);
+    });
+})();
 </script>
 
 
 
-    
-  </div>
 </body>
-
 </html>
